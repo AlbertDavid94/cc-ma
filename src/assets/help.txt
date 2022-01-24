@@ -1,0 +1,25 @@
+Usage: node index.js [FILE] [NUMBER OF VIEW SPOTS] 
+
+Arguments:
+    FILE                    Input file containing data of n meshes formatted in JSON
+                            {
+                                nodes: [
+                                    {id: node_id1, x: <number value>, y: <number value>},
+                                    {id: node_id2, x: <number value>, y: <number value>},
+                                    {id: node_id3, x: <number value>, y: <number value>},
+                                    ...
+                                ],
+                                elements: [
+                                    {id: element_id1, nodes: [node_id1, node_id2, node_id3]},
+                                    ...
+                                ],
+                                values: [
+                                    {element_id: element_id1, value: <number value>},
+                                    ...
+                                ]
+                            }
+    
+    NUMBER OF VIEW SPOTS    The number of local maxima to output
+
+Example (show the 5 highest local maxima of mesh.json):
+node index.js mesh.json 5
