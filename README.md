@@ -1,6 +1,6 @@
 # cc-ma
 
-## Execution
+## Examples
 
 ```bash
 node src/index.js mesh.json 10
